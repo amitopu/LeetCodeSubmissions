@@ -11,7 +11,7 @@ The reshaped matrix should be filled with all the elements of the original matri
 If the reshape operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.
 
 
-#### Input: mat = [[1,2],[3,4]], r = 1, c = 4
+### Input: mat = [[1,2],[3,4]], r = 1, c = 4
 Output: [[1,2,3,4]]
 
 
