@@ -37,25 +37,25 @@ class Solution:
 
 
 
-class Solution:
-    def generate(self, numRows: int) -> List[List[int]]:
-         new = []
+# class Solution:
+#     def generate(self, numRows: int) -> List[List[int]]:
+#         new = []
         
-        ret.append([1])
+#         new.append([1])
         
-        if numRows > 1:
-            ret.append([1,1])
-        else:
-            return ret
+#         if numRows > 1:
+#             new.append([1,1])
+#         else:
+#             return new
         
-        for ii in range(2, numRows):
-            prev_row = ret[-1]
-            prev = 0
-            new = []
-            for v in prev_row:
-                new.append(v + prev)
-                prev = v
-            new.append(1)
-            ret.append(new)
+#         for i in range(2, numRows):
+#             prev_row = new[-1]
+#             prev = 0
+#             temp = []
+#             for v in prev_row:
+#                 temp.append(v + prev)
+#                 prev = v
+#             temp.append(1)
+#             new.append(temp)
         
-        return ret
+#         return new
