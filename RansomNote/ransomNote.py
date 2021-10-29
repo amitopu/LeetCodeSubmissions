@@ -52,3 +52,17 @@ class Solution:
 #             return True
 #         else:
 #             return False
+
+# another solution which is better than others
+
+# class Solution:
+#     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+#         n = len(ransomNote)
+#         m = len(magazine)
+        
+#         for i in ransomNote:
+#             if i not in magazine:
+#                 break
+#             magazine = magazine.replace(i,'',1)
+        
+#         return len(magazine) == m - n
