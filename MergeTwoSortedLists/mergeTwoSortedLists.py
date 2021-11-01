@@ -40,3 +40,42 @@ class Solution:
             return l1
         else:
             return l2
+
+
+# Another faster solution
+# Needs less operation
+
+# # Definition for singly-linked list.
+# # class ListNode:
+# #     def __init__(self, val=0, next=None):
+# #         self.val = val
+# #         self.next = next
+# class Solution:
+#     def mergeTwoLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        
+#         # initializing the result node and a pointer currentNode pointing to it
+        
+#         result = ListNode(0)
+#         currentNode = result
+        
+#         # iterating over l1 and l2 and updating the result node
+        
+#         while l1 is not None and l2 is not None:
+#             if l1.val < l2.val:
+#                 currentNode.next = l1
+#                 l1 = l1.next
+#             else:
+#                 currentNode.next = l2
+#                 l2 = l2.next
+                
+#             # point the currentNode to latest node
+#             currentNode = currentNode.next
+        
+#         # managing the rest of the nodes
+        
+#         if l1 is not None:
+#             currentNode.next = l1
+#         else:
+#             currentNode.next = l2
+        
+#         return result.next
