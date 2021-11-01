@@ -10,7 +10,7 @@ class Solution:
             return False
 
 
-        # Floyd's Rabbit and Tortoise algorithm
+        # Floyd's algorithm
 
         slow, fast = head, head
         while fast and fast.next:
