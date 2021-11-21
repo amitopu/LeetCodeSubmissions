@@ -17,7 +17,7 @@ Return the simplified canonical path.
 
  
 
-#### Example 1:
+### Example 1:
 
 Input: path = "/home/"
 Output: "/home"
